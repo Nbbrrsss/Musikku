@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/listPenyanyi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/gmbr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <View
+            android:id="@+id/lagu"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/list" />
+
+        <ImageView
+            android:id="@+id/imgFoto"
+            android:layout_width="85dp"
+            android:layout_height="93dp"
+            android:layout_alignStart="@+id/lagu"
+            android:layout_alignTop="@+id/lagu"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/musik"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/namapenyanyi"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignStart="@+id/lagu"
+            android:layout_alignTop="@+id/lagu"
+            android:layout_alignBottom="@+id/lagu"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="69dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Nama Penyanyi"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/asalpenyanyi"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignStart="@+id/lagu"
+            android:layout_alignTop="@+id/lagu"
+            android:layout_alignBottom="@+id/lagu"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="66dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="29dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="asal Penyanyi"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
